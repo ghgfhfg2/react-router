@@ -5,14 +5,14 @@ import Login from '../components/Login'
 
 function Routes(){
     return(
-        <Router>
+        <Router>  
             <ul>
                 <li><Link to='/Login'>login</Link></li>
                 <li><Link to='/Join'>Join</Link></li>
-            </ul>
+            </ul>          
             <Switch>
                 <Route exact path='/login' component={Login} />
-                <Route exact path='/join' component={Join} />
+                <Route exact path='/join' component={Join} />                
             </Switch>
         </Router>
     )
